@@ -1,0 +1,127 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'jasmine@latest',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.28
+4 warn package.json @ No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'jasmine@latest', null ]
+7 verbose cache add name=undefined spec="jasmine@latest" args=["jasmine@latest",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'jasmine@latest',
+8 verbose parsed url   path: 'jasmine@latest',
+8 verbose parsed url   href: 'jasmine@latest' }
+9 verbose cache add name="jasmine" spec="latest" args=["jasmine","latest"]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'latest',
+10 verbose parsed url   path: 'latest',
+10 verbose parsed url   href: 'latest' }
+11 verbose addNamed [ 'jasmine', 'latest' ]
+12 verbose addNamed [ null, null ]
+13 silly lockFile 9f6210fa-jasmine-latest jasmine@latest
+14 verbose lock jasmine@latest /Users/Inuwa/.npm/9f6210fa-jasmine-latest.lock
+15 info addNameTag [ 'jasmine', 'latest' ]
+16 verbose url raw jasmine
+17 verbose url resolving [ 'https://registry.npmjs.org/', './jasmine' ]
+18 verbose url resolved https://registry.npmjs.org/jasmine
+19 info trying registry request attempt 1 at 12:06:46
+20 verbose etag "19W0V21VZSYIKPY95MAERPKPF"
+21 http GET https://registry.npmjs.org/jasmine
+22 http 304 https://registry.npmjs.org/jasmine
+23 silly registry.get cb [ 304,
+23 silly registry.get   { date: 'Thu, 03 Dec 2015 10:40:03 GMT',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     'cache-control': 'max-age=60',
+23 silly registry.get     etag: '"19W0V21VZSYIKPY95MAERPKPF"',
+23 silly registry.get     age: '9',
+23 silly registry.get     connection: 'keep-alive',
+23 silly registry.get     'x-served-by': 'cache-ams4135-AMS',
+23 silly registry.get     'x-cache': 'HIT',
+23 silly registry.get     'x-cache-hits': '1',
+23 silly registry.get     'x-timer': 'S1449139203.029412,VS0,VE0',
+23 silly registry.get     vary: 'Accept' } ]
+24 verbose etag jasmine from cache
+25 verbose addNamed [ 'jasmine', '2.4.0' ]
+26 verbose addNamed [ '2.4.0', '2.4.0' ]
+27 silly lockFile e1cf341a-jasmine-2-4-0 jasmine@2.4.0
+28 verbose lock jasmine@2.4.0 /Users/Inuwa/.npm/e1cf341a-jasmine-2-4-0.lock
+29 silly lockFile e1cf341a-jasmine-2-4-0 jasmine@2.4.0
+30 silly lockFile e1cf341a-jasmine-2-4-0 jasmine@2.4.0
+31 silly lockFile 9f6210fa-jasmine-latest jasmine@latest
+32 silly lockFile 9f6210fa-jasmine-latest jasmine@latest
+33 silly resolved [ { name: 'jasmine',
+33 silly resolved     description: 'Command line jasmine',
+33 silly resolved     homepage: 'http://jasmine.github.io/',
+33 silly resolved     keywords: [ 'test', 'jasmine', 'tdd', 'bdd' ],
+33 silly resolved     license: 'MIT',
+33 silly resolved     version: '2.4.0',
+33 silly resolved     repository: { type: 'git', url: 'https://github.com/jasmine/jasmine-npm' },
+33 silly resolved     scripts: { test: 'grunt && ./bin/jasmine.js' },
+33 silly resolved     dependencies: { exit: '^0.1.2', glob: '^3.2.11', 'jasmine-core': '~2.4.0' },
+33 silly resolved     bin: { jasmine: './bin/jasmine.js' },
+33 silly resolved     main: './lib/jasmine.js',
+33 silly resolved     devDependencies:
+33 silly resolved      { grunt: '^0.4.2',
+33 silly resolved        'grunt-cli': '^0.1.13',
+33 silly resolved        'grunt-contrib-jshint': '^0.11.0',
+33 silly resolved        shelljs: '^0.3.0' },
+33 silly resolved     bugs: { url: 'https://github.com/jasmine/jasmine-npm/issues' },
+33 silly resolved     readme: 'ERROR: No README data found!',
+33 silly resolved     _id: 'jasmine@2.4.0',
+33 silly resolved     _shasum: '5acea0b6220b818ab7d5971002aefdc82abd7bcf',
+33 silly resolved     _from: 'jasmine@latest',
+33 silly resolved     _resolved: 'https://registry.npmjs.org/jasmine/-/jasmine-2.4.0.tgz' } ]
+34 info install jasmine@2.4.0 into /Users/Inuwa/Documents/serious stuff/HOW TO/AngularJS/practical/eHealth/angular-pouchdb
+35 info installOne jasmine@2.4.0
+36 info /Users/Inuwa/Documents/serious stuff/HOW TO/AngularJS/practical/eHealth/angular-pouchdb/node_modules/jasmine unbuild
+37 info preuninstall jasmine@2.4.0
+38 info uninstall jasmine@2.4.0
+39 verbose true,/Users/Inuwa/Documents/serious stuff/HOW TO/AngularJS/practical/eHealth/angular-pouchdb/node_modules,/Users/Inuwa/Documents/serious stuff/HOW TO/AngularJS/practical/eHealth/angular-pouchdb/node_modules unbuild jasmine@2.4.0
+40 verbose /Users/Inuwa/Documents/serious stuff/HOW TO/AngularJS/practical/eHealth/angular-pouchdb/node_modules/.bin,[object Object] binRoot
+41 info postuninstall jasmine@2.4.0
+42 info /Users/Inuwa/Documents/serious stuff/HOW TO/AngularJS/practical/eHealth/angular-pouchdb/node_modules/jasmine unbuild
+43 info preuninstall jasmine@2.4.0
+44 info uninstall jasmine@2.4.0
+45 verbose true,/Users/Inuwa/Documents/serious stuff/HOW TO/AngularJS/practical/eHealth/angular-pouchdb/node_modules,/Users/Inuwa/Documents/serious stuff/HOW TO/AngularJS/practical/eHealth/angular-pouchdb/node_modules unbuild jasmine@2.4.0
+46 verbose /Users/Inuwa/Documents/serious stuff/HOW TO/AngularJS/practical/eHealth/angular-pouchdb/node_modules/.bin,[object Object] binRoot
+47 info postuninstall jasmine@2.4.0
+48 error error rolling back Error: EACCES, unlink '/Users/Inuwa/Documents/serious stuff/HOW TO/AngularJS/practical/eHealth/angular-pouchdb/node_modules/jasmine/.travis.yml'
+48 error error rolling back  jasmine@2.4.0 { [Error: EACCES, unlink '/Users/Inuwa/Documents/serious stuff/HOW TO/AngularJS/practical/eHealth/angular-pouchdb/node_modules/jasmine/.travis.yml']
+48 error error rolling back   errno: 3,
+48 error error rolling back   code: 'EACCES',
+48 error error rolling back   path: '/Users/Inuwa/Documents/serious stuff/HOW TO/AngularJS/practical/eHealth/angular-pouchdb/node_modules/jasmine/.travis.yml' }
+49 error Error: EACCES, unlink '/Users/Inuwa/Documents/serious stuff/HOW TO/AngularJS/practical/eHealth/angular-pouchdb/node_modules/jasmine/.travis.yml'
+49 error  { [Error: EACCES, unlink '/Users/Inuwa/Documents/serious stuff/HOW TO/AngularJS/practical/eHealth/angular-pouchdb/node_modules/jasmine/.travis.yml']
+49 error   errno: 3,
+49 error   code: 'EACCES',
+49 error   path: '/Users/Inuwa/Documents/serious stuff/HOW TO/AngularJS/practical/eHealth/angular-pouchdb/node_modules/jasmine/.travis.yml' }
+50 error Please try running this command again as root/Administrator.
+51 error System Darwin 13.4.0
+52 error command "node" "/usr/local/bin/npm" "install" "jasmine@latest" "--save-dev"
+53 error cwd /Users/Inuwa/Documents/serious stuff/HOW TO/AngularJS/practical/eHealth/angular-pouchdb
+54 error node -v v0.10.28
+55 error npm -v 1.4.9
+56 error path /Users/Inuwa/Documents/serious stuff/HOW TO/AngularJS/practical/eHealth/angular-pouchdb/node_modules/jasmine/.travis.yml
+57 error code EACCES
+58 error errno 3
+59 error stack Error: EACCES, unlink '/Users/Inuwa/Documents/serious stuff/HOW TO/AngularJS/practical/eHealth/angular-pouchdb/node_modules/jasmine/.travis.yml'
+60 verbose exit [ 3, true ]

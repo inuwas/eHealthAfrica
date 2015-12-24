@@ -1,0 +1,72 @@
+
+<html>
+	<head>
+		<link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	</head>
+	<body>
+	
+		<h1>EHealth Questions</h1>
+		<div class="jumbotron">
+			<div class="container">
+  				<h4>CHARACTERS IN STRINGS (SimilarCharacters.js)</h4>
+  				<p></p>
+  				<p>Please enter a string in each of the text boxes below and then press<b> Click Me</b></p>
+  			<div class="col-lg-6"><div class="row"><label for="string1" id="labelForString1">Enter String:</label><input type=text id="string1" /></div>
+  			<div class="row"><label for="string2" id="labelForString2">Enter String:</label><input type=text id="string2" /></div>
+  			<div class="row"><p><input class="btn btn-primary btn-lg" role="button" type="button" value="click me" onclick="find_char(document.getElementById('string1').value,document.getElementById('string2').value);" ></p>
+  			<p>Answer for N*N solution is: <span id="uniqueString"></span></p>
+  			<p>Answer for N solution is:   <span id="uniqueString2"></span></p>
+  			</div>
+			</div>
+			</div>
+		</div>
+		<br />
+		<div class="jumbotron">
+			<div class="container">
+			<h4>ARRAY COMPACTION (TrimmedArray.js)</h4>
+  				<p></p>
+  				<p>Please enter an array of numbers with spaces and then click<b> See Results</b></p>
+			<div class="col-md-4"><div class="row"><label for="arrayStr" id="arrayStringLabel">Enter a number or Letter:&nbsp; &nbsp; &nbsp;</label><input type=text id="arrayStr" onfocus='javascript: this.value = ""' /><br><input type="button" class="btn btn-primary btn-lg" role="button" value="See Results" onclick="runThem(document.getElementById('arrayStr').value)" ></div>
+			<br />
+		<br />
+		</div>
+		<p>Compacted Array is: <span id='trimmedArray'></span></p>
+		</div>
+		</div>
+		<div class="jumbotron">
+			<div class="container">
+			<h4>ROTATING AN ARRAY (ShiftCell.js)</h4>
+  				<p></p>
+  				<p>Please enter an array of numbers with spaces in the next textbox and a number in the last textbox then click<b> See Results </b>when done</p>
+			<div class="col-md-4"><div class="row"><label for="arrayShift" id="arrayShiftLabel">Enter an array of numbers: &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;</label>
+		<input type=text id="arrayShift" onfocus='javascript: this.value = ""' />
+		<br /></b><label for="shiftString" id="arrayStringLabel">Enter the number of shift places: </label>
+		<input type=text id="shiftString" onfocus='javascript: this.value = ""' />
+		<input type="button" class="btn btn-primary btn-lg" value="See Results" onclick="shiftCell(document.getElementById('shiftString').value, document.getElementById('arrayShift').value)"></div>
+		</div>
+		<p>Answer is:&nbsp;&nbsp;<span id="shiftCell"></span></p>
+		</div>
+		</div>
+		<br />
+		<br />
+		<div class="jumbotron">
+			<div class="container">
+			<h4>LEAST COMMON MULTIPLE (ReturnArrays.js)</h4>
+  				<p></p>
+  				<p>Please enter an array of numbers with spaces and then <i>click</i><b>  LCM</b></p>
+			<div class="col-md-4"><div class="row"><label for="numberArray" id="numberArrayLabel">Enter a string of Numbers seperated by spaces: </label>
+		<input type=text id="numberArray" onfocus='javascript: this.value = ""' />
+		<input type="button" class="btn btn-primary btn-lg" value="LCM" onclick="runBoth(document.getElementById('numberArray').value)"></div>
+		</div>
+		<p>Answer is: &nbsp;&nbsp;&nbsp;&nbsp;<span id="lcm"></span></p>
+		</div>
+		</div>
+	<script src="lib/bootstrap/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/bootstrap/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/SimilarCharacters.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/TrimmedArray.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/ShiftCell.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/ReturnArrays.js" type="text/javascript" charset="utf-8"></script>
+	<script src="lib/math.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

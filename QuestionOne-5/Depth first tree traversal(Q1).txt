@@ -1,0 +1,3 @@
+THE DEPTH FIRST TREE TRAVERSAL
+*****************************************************************************
+There are three algorithms for depth first tree traversal namely post-order,in-order algorithm and pre-order. The in-order algorithm visits the LEFT branch firstly ,the PARENT , and then the RIGHT of the branch taking the binary tree as an example.The in-order algorithm keeps visiting the same branch of the binary tree recursively until a LEAF node is encountered  or a node with no more LEFT branches of the tree is visited, afterwards it visits the parent node of that tree and then the RIGHT branch of the said tree.In a binary search tree , if the the in-order depth first tree traversal is applied it will give a sorted list of numbers.
