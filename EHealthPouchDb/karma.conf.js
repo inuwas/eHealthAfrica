@@ -19,6 +19,7 @@ module.exports = function(config) {
       {pattern: 'scripts/bootstrap/dist/css/bootstrap-theme.css', included: false},
       {pattern: 'css/style.css', included: false},
       {pattern: 'css/*.css', included: false},
+      {pattern: 'css/*.png', included: false},
       {pattern: 'angular-pouchdb.coffee', included: false},
       {pattern: 'scripts/angular/angular.js', included: false},
       {pattern: 'scripts/angular-mocks/*js', included: false},

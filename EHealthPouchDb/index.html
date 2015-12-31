@@ -29,7 +29,7 @@
     <div ng-app="myApp">
       <div ng-controller="zController">
         <input ng-model="putInDatabase" placeholder="What needs to be done?" autofocus>
-        <input type="button" id="buttonMe" value="Add to Pouch" />
+        <input type="button" id="buttonMe" value="Add to Pouch" ng-click="clickOnMe();"/>
       </div>
     </div>
     <footer id="info">
@@ -38,16 +38,15 @@
       <p>Created by <a href="http://twitter.com/ffesseler">Florian Fesseler</a></p>
       <p>Cleanup, edits by <a href="http://github.com/boushley">Aaron Boushley</a></p>
     </footer>
+    <script src="scripts/jquery/dist/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/bootstrap/dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
     <script src="scripts/angular/angular.js" type="text/javascript" charset="utf-8"></script>
     <script src="app/pouchdb-5.0.0.min.js"></script>
-	<script src="scripts/angular-pouchdb/angular-pouchdb.js" type="text/javascript" charset="utf-8"></script>
-	<script src="scripts/angular-mocks/angular-mocks.js" type="text/javascript" charset="utf-8"></script>
-	<script src="scripts/pouchdb/dist/pouchdb.js" type="text/javascript" charset="utf-8"></script>
-	<script src="scripts/jquery/dist/jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script src="scripts/bootstrap/dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
-	<script src="app/app.js" type="text/javascript" charset="utf-8"></script>
-	<script src="app/base.js"></script>
-	<script src="app/app.js"></script>
-	<script src="app/controllers.js" type="text/javascript" charset="utf-8"></script>
-  </body>
+    <script src="scripts/pouchdb/dist/pouchdb.js" type="text/javascript" charset="utf-8"></script>
+	  <script src="scripts/angular-pouchdb/angular-pouchdb.js" type="text/javascript" charset="utf-8"></script>
+	  <script src="scripts/angular-mocks/angular-mocks.js" type="text/javascript" charset="utf-8"></script>
+    <script src="app/app.js" type="text/javascript" charset="utf-8"></script>
+    <script src="app/base.js"></script>
+    <script src="app/controllers.js" type="text/javascript" charset="utf-8"></script>
+	</body>
 </html>

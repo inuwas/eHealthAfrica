@@ -6,6 +6,8 @@
   var newTodoDom = document.getElementById('new-todo');
   var syncDom = document.getElementById('sync-wrapper');
 
+
+
   // EDITING STARTS HERE (you dont need to edit anything above this line)
 
   var db = new PouchDB('todosync');
@@ -189,16 +191,29 @@
 //Begin
   var theApp = angular.module('myApp', ['pouchdb']);
   var dbMe = PouchDB('myDb');
+  var buttonMe = document.getElementById('buttonMe');
+  
   //var putInDatabase = document.getElementById("putInDatabase").value;
   function addTheValueToTextField(text){
     var docShehu = {_id: new Date().toISOString(), value: text};
     //Get the value from the text field
     return docShehu;
   }
-  theApp.controller('zController', function($scope, pouchDB) {
+  theApp.controller('zController', function($scope) {
   
-  var buttonMe = document.getElementById("buttonMe");
-  buttonMe.addEventListener("click", function(error, result){
+  /*buttonMe.addEventListener('click', function(error, result){
+        if($scope.putInDatabase.trim() != "")
+        {
+           dbMe.put(addTheValueToTextField($scope.putInDatabase)).then(function(response){
+              console.log("You have put something in the database");
+              console.log(response);
+           }).catch(function (err){
+              console.log("You have  a "+err+" error");
+           });
+        }
+    },false);*/
+    /*
+        $('#buttonMe').on('click', function(event){
         if($scope.putInDatabase.trim() != "")
         {
            dbMe.put(addTheValueToTextField($scope.putInDatabase)).then(function(response){
@@ -209,6 +224,17 @@
            });
         }
     });
+    */
+    $scope.clickOnMe = function(){
+        if($scope.putInDatabase.trim() != "")
+        {
+           dbMe.put(addTheValueToTextField($scope.putInDatabase)).then(function(response){
+              console.log("You have put something in the database");
+              console.log(response);
+           }).catch(function (err){
+              console.log("You have  a "+err+" error");
+           });
+        }
+    }
   });
-
   //End

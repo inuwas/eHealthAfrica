@@ -6,12 +6,23 @@
 describe('pouchdb', function () {
 
   var pouchdb;
-
+  var scope;
+  var zController;
+  //I added this
+  beforeEach(angular.mock.module('myApp'));
+  /***Added by Me*/
   beforeEach(module('pouchdb'));
-
   beforeEach(inject(function (_pouchdb_) {
       pouchdb = _pouchdb_;
   }));
+  
+  beforeEach(inject(function($rootScope, $controller){
+        //create an empty scope
+        scope = $rootScope.$new();
+        //declare the controller and inject our empty scope
+        $controller('zController', {$scope: scope});
+  }));
+  // tests start here
 
   function recreate(name, callback) {
     var db = new PouchDB(name);
@@ -69,7 +80,7 @@ describe('pouchdb', function () {
           onChange: function () {
             local.get(doc._id).then(function (value) {
               expect(value, "remote DID NOT replicate from remote").not.toBeNull();
-              //done();
+              done();
             });
           }
         });
@@ -85,10 +96,10 @@ describe('pouchdb', function () {
       db.put(doc).then(function () {
         db.get(doc._id).then(function (result) {
           var retrieved = result;
-          expect(retrieved).not.toBeNull();
+          pect(retrieved).not.toBeNull();
           expect(retrieved.title).toBe('bar');
           db.destroy().then(function () {
-            //done();
+            done();
           });
         }).catch(function (error) {
           dump(error);
